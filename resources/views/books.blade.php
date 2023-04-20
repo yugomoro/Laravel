@@ -34,7 +34,7 @@
         </form>
     </div>
     <!-- Book: 既に登録されてる本のリスト -->
-     <!-- 現在の本 -->
+    <!-- 現在の本 -->
     @if (count($books) > 0)
         <div class="card-body">
             <div class="card-body">

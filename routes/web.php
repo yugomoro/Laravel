@@ -42,8 +42,8 @@ Route::post('/books', function (Request $request) {
             ->withErrors($validator);
     }
     
-    //以下登録処理が後で追加します！    
-// Eloquentモデル（登録処理）
+    //以下登録処理が後で追加します！
+    // Eloquentモデル（登録処理）
     $books = new Book;
     $books->item_name = $request->item_name;
     $books->item_number = '1';
@@ -51,6 +51,7 @@ Route::post('/books', function (Request $request) {
     $books->published = '2017-03-07 00:00:00';
     $books->save(); 
     return redirect('/');
+
 
 });
 

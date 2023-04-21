@@ -47,7 +47,12 @@
             </div>
         </form>
     </div>
-
+    
+    @if (session('message'))
+      <div class="alert alert-success">
+          {{ session('message') }}
+      </div>
+    @endif
 
     <!-- Book: 既に登録されてる本のリスト -->
      <!-- 現在の本 -->

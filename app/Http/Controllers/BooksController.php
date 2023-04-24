@@ -16,7 +16,8 @@ class BooksController extends Controller
     }
     
     //本ダッシュボード表示
-    public function index() {
+    public function index()
+    {
         $books = Book::where('user_id',Auth::user()->id)->orderBy('created_at', 'asc')->paginate(3);
         return view('books', [
             'books' => $books
